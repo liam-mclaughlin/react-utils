@@ -1,0 +1,9 @@
+{
+  "name": "react-utils",
+  "version": "0.0.1",
+  "description": "A collection of helpful utils",
+  "main": "index.js",
+  "repository": "https://github.com/liam-mclaughlin/react-utils.git",
+  "author": "liam-mclaughlin <liam-mclaughlin@users.noreply.github.com>",
+  "license": "MIT"
+}
