@@ -13,7 +13,7 @@ if (name === null) {
 const UCName = name.charAt(0).toUpperCase() + name.slice(1)
 const LCName = name.charAt(0).toLowerCase() + name.slice(1)
 
-if (['functional','class'].indexOf(cType) === -1) {
+if (['functional', 'class'].indexOf(cType) === -1) {
   console.log('You must specify a type for your component (\'class\',\'functional\')\n\t eg. node createScene.js name=Foo type=functional')
   process.exit()
 }
@@ -114,5 +114,3 @@ fs.writeFile(indexFile, index, function (err) {
     })
   }
 })
-
-

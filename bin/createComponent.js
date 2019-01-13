@@ -13,7 +13,7 @@ if (name === null) {
 const UCName = name.charAt(0).toUpperCase() + name.slice(1)
 const LCName = name.charAt(0).toLowerCase() + name.slice(1)
 
-if (['functional','class'].indexOf(cType) === -1) {
+if (['functional', 'class'].indexOf(cType) === -1) {
   console.log('You must specify a type for your component (\'class\',\'functional\')\n\t eg. node createComponent.js name=Foo type=functional')
   process.exit()
 }
@@ -122,19 +122,17 @@ fs.writeFile(indexFile, index, function (err) {
             console.log(dir + `/${LCName}.scss created`)
             fs.writeFile(dir + `/${LCName}.test.js`, testFile, function (err) {
               if (err) {
-                return console.log(err) 
+                return console.log(err)
               } else {
                 console.log(dir + `/${LCName}.test.js created`)
                 process.exit()
               }
             })
           }
-         
+
         })
       }
-     
+
     })
   }
 })
-
-

@@ -59,6 +59,7 @@ describe('${UCName} container', () => {
   })
 })
 `
+
 //mk the directory
 const dir = `./src/containers/${LCName}`
 if (!fs.existsSync(dir)) {
@@ -87,5 +88,3 @@ fs.writeFile(indexFile, index, function (err) {
     })
   }
 })
-
-
